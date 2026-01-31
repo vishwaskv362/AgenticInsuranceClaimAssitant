@@ -1,0 +1,155 @@
+═══════════════════════════════════════════════════════════════════════════════
+                         ICICI LOMBARD GENERAL INSURANCE CO. LTD.
+                         CLAIM REPUDIATION INTIMATION
+═══════════════════════════════════════════════════════════════════════════════
+
+                                                    Date: 28 January, 2026
+                                                    Claim Ref: ICICI/HLT/2026/DEL/445566
+
+────────────────────────────────────────────────────────────────────────────────
+INSURED DETAILS
+────────────────────────────────────────────────────────────────────────────────
+Insured Name:           Mrs. Priya Gupta
+Policy Number:          3001/98765432/00/000
+Certificate Number:     HLT-DEL-2023-778899
+Policy Name:            ICICI Lombard Complete Health Insurance
+Sum Insured:            ₹5,00,000/-
+Validity:               01 April, 2023 to 31 March, 2026
+
+────────────────────────────────────────────────────────────────────────────────
+CLAIM INFORMATION
+────────────────────────────────────────────────────────────────────────────────
+Claim Number:           CLM-ICICI-2026-445566
+Claim Type:             Reimbursement
+Date of Hospitalization: 05 January, 2026 - 08 January, 2026
+Hospital:               Max Super Speciality Hospital, Saket, New Delhi
+Treating Doctor:        Dr. Sunita Verma, MD Psychiatry
+
+Diagnosis:
+- Major Depressive Disorder (F32.2)
+- Generalized Anxiety Disorder (F41.1)
+
+Treatment:
+- Inpatient psychiatric care (4 days)
+- Psychiatric evaluation and therapy
+- Medication management
+
+────────────────────────────────────────────────────────────────────────────────
+CLAIM AMOUNT DETAILS
+────────────────────────────────────────────────────────────────────────────────
+Claim Amount Submitted:                         ₹1,85,000/-
+Admissible Amount:                              ₹0/-
+Amount Payable:                                 ₹0/-
+Rejected Amount:                                ₹1,85,000/-
+
+────────────────────────────────────────────────────────────────────────────────
+STATUS: CLAIM REJECTED
+REJECTION CODE: PA-001
+────────────────────────────────────────────────────────────────────────────────
+
+REASON FOR REJECTION:
+Pre-Authorization/Intimation not obtained for planned hospitalization
+
+Dear Policyholder,
+
+We regret to inform you that your claim has been rejected for the following reason:
+
+As per your policy terms and conditions (Section 5.4 - Claim Procedure), 
+pre-authorization/prior intimation is mandatory for all planned hospitalizations. 
+Our records indicate that no pre-authorization was obtained before the admission 
+on 05 January, 2026.
+
+Policy Terms Quoted:
+"For planned hospitalization, the insured must obtain pre-authorization from the 
+TPA at least 48 hours before admission. Failure to obtain pre-authorization may 
+result in denial of cashless facility and/or claim rejection."
+
+Investigation Findings:
+• No pre-authorization request found in our system
+• Hospital did not intimate TPA before admission
+• Claim submitted as reimbursement after discharge
+
+Note: Mental health treatment is covered under your policy as per Mental Healthcare 
+Act, 2017 and IRDAI guidelines on parity. However, procedural requirements like 
+pre-authorization still apply.
+
+────────────────────────────────────────────────────────────────────────────────
+APPEAL PROCESS / अपील प्रक्रिया
+────────────────────────────────────────────────────────────────────────────────
+
+If you disagree with this decision, you may appeal:
+
+GROUNDS FOR POSSIBLE APPEAL:
+1. If admission was on EMERGENCY basis (provide emergency certificate)
+2. If pre-authorization was actually obtained (provide auth reference)
+3. If TPA/Hospital failed to respond to pre-auth request (provide proof)
+
+HOW TO APPEAL:
+
+Step 1: Grievance with ICICI Lombard
+• Email: customersupport@aborad.com
+• Call: 1800-2666 (Toll Free)
+• Online: www.icicilombard.com/grievance
+• Response: Within 15 days
+
+Step 2: IRDAI Grievance (IGMS)
+• Portal: igms.irda.gov.in
+• IRDAI Helpline: 155255
+• If not resolved at company level
+
+Step 3: Insurance Ombudsman
+• Free of cost for claims up to ₹50 lakhs
+• Find your Ombudsman: www.cioins.co.in
+• Decision binding on insurer
+
+Step 4: Consumer Forum
+• District Consumer Forum for claims up to ₹1 crore
+• Under Consumer Protection Act, 2019
+
+────────────────────────────────────────────────────────────────────────────────
+DOCUMENTS REQUIRED FOR APPEAL
+────────────────────────────────────────────────────────────────────────────────
+
+If the admission was an emergency:
+□ Emergency certificate from treating doctor
+□ Initial assessment report showing urgency
+□ Psychiatrist's note on emergency psychiatric condition
+
+If pre-authorization was obtained:
+□ Pre-authorization request copy
+□ Email/communication proof with TPA
+□ TPA acknowledgment (if any)
+
+General documents:
+□ This rejection letter
+□ All medical records
+□ Discharge summary
+□ Detailed bill copy
+□ Policy copy
+
+────────────────────────────────────────────────────────────────────────────────
+IRDAI MENTAL HEALTH PARITY REFERENCE
+────────────────────────────────────────────────────────────────────────────────
+
+As per IRDAI guidelines and Mental Healthcare Act, 2017:
+• Mental illness must be treated at par with physical illness
+• Insurance cannot discriminate against mental health claims
+• Standard policy exclusions/terms still apply equally
+
+If you believe your claim was rejected unfairly due to mental health stigma, 
+please escalate to IRDAI through IGMS portal.
+
+────────────────────────────────────────────────────────────────────────────────
+CONTACT US
+────────────────────────────────────────────────────────────────────────────────
+
+Toll-Free:              1800-2666 / 1860-266-5545
+Email:                  customersupport@icicilombard.com
+Website:                www.icicilombard.com
+Grievance:              gro@icicilombard.com
+
+────────────────────────────────────────────────────────────────────────────────
+ICICI Lombard General Insurance Company Limited
+IRDAI Reg. No. 115 | CIN: L67200MH2000PLC129408
+Registered Office: ICICI Lombard House, 414, Veer Savarkar Marg, Mumbai - 400025
+────────────────────────────────────────────────────────────────────────────────

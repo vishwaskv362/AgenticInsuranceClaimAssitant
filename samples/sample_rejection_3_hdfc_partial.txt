@@ -1,0 +1,154 @@
+═══════════════════════════════════════════════════════════════════════════════
+                              HDFC ERGO GENERAL INSURANCE
+                         CLAIM SETTLEMENT LETTER - PARTIAL PAYMENT
+═══════════════════════════════════════════════════════════════════════════════
+
+                                                    Date: 20 January, 2026
+                                                    Claim Reference: HDFC/HLT/BLR/2026/112233
+
+────────────────────────────────────────────────────────────────────────────────
+POLICY DETAILS
+────────────────────────────────────────────────────────────────────────────────
+Policyholder:           Mr. Venkatesh Rao
+Policy No:              HDFC-OPTIMA-2022-BLR-445566
+Product:                HDFC ERGO Optima Secure
+Sum Insured:            ₹15,00,000/-
+Policy Period:          01 January, 2022 to 31 December, 2026
+No Claim Bonus:         50% (₹7,50,000/- additional)
+
+────────────────────────────────────────────────────────────────────────────────
+CLAIM DETAILS
+────────────────────────────────────────────────────────────────────────────────
+Claim Number:           CLM-HDFC-2026-112233
+TPA:                    Health India TPA Services Pvt. Ltd.
+Hospital:               Apollo Hospitals, Bannerghatta Road, Bangalore
+Admission Date:         02 January, 2026
+Discharge Date:         10 January, 2026 (8 days)
+
+Diagnosis:              Coronary Artery Disease with Triple Vessel Disease
+Procedure:              Coronary Artery Bypass Graft Surgery (CABG x 3)
+Treating Doctor:        Dr. K. Ramesh, MCh Cardiothoracic Surgery
+
+────────────────────────────────────────────────────────────────────────────────
+CLAIM SETTLEMENT SUMMARY
+────────────────────────────────────────────────────────────────────────────────
+                                    Amount (₹)
+────────────────────────────────────────────────────────────────────────────────
+Total Claim Amount:                 8,50,000/-
+Room Rent Claimed:                  1,20,000/- (₹15,000/day x 8 days)
+Room Rent Eligible:                   64,000/- (₹8,000/day x 8 days)
+Room Rent Excess:                     56,000/-
+
+Proportionate Deduction Applied:    1,87,600/- (22% on all charges)
+
+Non-Payable Items Deducted:
+  - Gloves & Consumables:             12,500/-
+  - File Charges:                        500/-
+  - Guest Meals:                       2,400/-
+  - Telephone/TV Charges:                800/-
+  - Admission Kit:                     1,200/-
+  Total Non-Payables:                 17,400/-
+
+TOTAL DEDUCTIONS:                   2,61,000/-
+NET PAYABLE AMOUNT:                 5,89,000/-
+────────────────────────────────────────────────────────────────────────────────
+
+REJECTION CODE: AMT-001, SL-001
+PARTIAL SETTLEMENT REASON: Room Rent Sub-Limit & Proportionate Deduction
+
+────────────────────────────────────────────────────────────────────────────────
+DETAILED EXPLANATION
+────────────────────────────────────────────────────────────────────────────────
+
+Dear Mr. Venkatesh Rao,
+
+Your claim for CABG surgery has been processed. However, due to the following 
+reasons, a partial payment of ₹5,89,000/- is being made instead of the full 
+claim of ₹8,50,000/-:
+
+1. ROOM RENT SUB-LIMIT BREACH (₹56,000/- deducted)
+   Your policy has a room rent sub-limit of ₹8,000/- per day for a ₹15 lakh 
+   Sum Insured. You occupied a room costing ₹15,000/- per day.
+   
+   Excess per day: ₹15,000 - ₹8,000 = ₹7,000/-
+   For 8 days: ₹7,000 x 8 = ₹56,000/-
+
+2. PROPORTIONATE DEDUCTION (₹1,87,600/- deducted)
+   As per policy clause 4.5(b), when room rent exceeds the entitled limit, 
+   all other charges are reduced proportionately.
+   
+   Eligible Room Rate / Actual Room Rate = ₹8,000 / ₹15,000 = 53.33%
+   Deduction Percentage = 100% - 53.33% = 46.67%
+   (Applied on surgery, ICU, medicines, etc.)
+   
+   Note: We have applied 22% as per claim assessment.
+
+3. NON-PAYABLE ITEMS (₹17,400/- deducted)
+   As per IRDAI standard list of non-payable items and policy terms, the 
+   following are not covered:
+   - Administrative charges
+   - Consumables (gloves, syringes)
+   - Guest meals and amenities
+   - Convenience items
+
+────────────────────────────────────────────────────────────────────────────────
+APPEAL RIGHTS / अपील का अधिकार
+────────────────────────────────────────────────────────────────────────────────
+
+If you disagree with this settlement, you may appeal for the following:
+
+POSSIBLE APPEAL GROUNDS:
+1. No room in eligible category was available (hospital certificate required)
+2. ICU room/post-op recovery room - no choice in room category
+3. Proportionate deduction calculation is incorrect
+4. Some non-payable items were actually medical necessities
+
+HOW TO APPEAL:
+
+Write to:   HDFC ERGO General Insurance Co. Ltd.
+            Grievance Redressal Officer
+            1st Floor, HDFC House, 165-166 Backbay Reclamation,
+            Mumbai - 400020
+
+Email:      gro@hdfcergo.com
+Phone:      1800-2700-700 (Toll Free)
+Online:     www.hdfcergo.com/claims/grievance
+
+Timeline:
+• Company response: Within 15 days
+• If not satisfied: IGMS portal (igms.irda.gov.in)
+• Ombudsman: Within 1 year of grievance
+
+────────────────────────────────────────────────────────────────────────────────
+DOCUMENTS FOR APPEAL (Room Non-Availability)
+────────────────────────────────────────────────────────────────────────────────
+
+Please provide:
+□ Hospital letter confirming ₹8,000/- room was not available
+□ Room allocation register excerpt (hospital to provide)
+□ Proof that upgrade was not by choice
+□ Any communication with hospital regarding room
+
+────────────────────────────────────────────────────────────────────────────────
+PAYMENT DETAILS
+────────────────────────────────────────────────────────────────────────────────
+
+Net Payable Amount:     ₹5,89,000/-
+Payment Mode:           NEFT
+Bank Account:           XXXX XXXX 5678 (as per policy records)
+Expected Credit:        Within 3 working days
+
+────────────────────────────────────────────────────────────────────────────────
+CONTACT US
+────────────────────────────────────────────────────────────────────────────────
+
+Toll-Free:              1800-2700-700
+Email:                  support@hdfcergo.com
+Website:                www.hdfcergo.com
+WhatsApp:               9930309090
+
+────────────────────────────────────────────────────────────────────────────────
+HDFC ERGO General Insurance Company Limited
+IRDAI Reg. No. 146 | CIN: U66030MH2007PLC177117
+Registered Office: 1st Floor, HDFC House, Mumbai - 400020
+────────────────────────────────────────────────────────────────────────────────

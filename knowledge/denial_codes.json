@@ -1,0 +1,1078 @@
+{
+  "rejection_codes": {
+    "PED-001": {
+      "code": "PED-001",
+      "category": "Pre-Existing Disease",
+      "description": "Claim rejected due to pre-existing disease within 48-month waiting period",
+      "common_causes": ["Disease existed before policy", "Within 48-month waiting period", "Medical history shows prior treatment"],
+      "appeal_grounds": ["Waiting period completed", "Disease first diagnosed after policy", "Moratorium period (8 years) exceeded", "Condition was unknown at proposal time"],
+      "success_rate": "Medium",
+      "irdai_reference": "IRDAI Health Insurance Regulations 2016, Section 4",
+      "documents_needed": ["Previous medical records", "Doctor's certificate of first diagnosis", "Policy inception proof"]
+    },
+    "PED-002": {
+      "code": "PED-002",
+      "category": "Pre-Existing Disease",
+      "description": "Non-disclosure of pre-existing condition at proposal stage",
+      "common_causes": ["Material fact not disclosed", "Suppression of medical history", "Failed to mention prior treatment"],
+      "appeal_grounds": ["Moratorium period exceeded (8 years) - Section 45", "Condition was genuinely unknown", "Insurer had opportunity to investigate", "No fraud or willful suppression"],
+      "success_rate": "High after 8 years",
+      "irdai_reference": "Insurance Act 1938 Section 45, IRDAI Circular 256/11/2020",
+      "documents_needed": ["Policy document", "Proposal form copy", "Medical records showing first diagnosis"]
+    },
+    "PED-003": {
+      "code": "PED-003",
+      "category": "Pre-Existing Disease",
+      "description": "Complication of pre-existing disease not covered",
+      "common_causes": ["Complication arose from PED", "Secondary condition linked to PED"],
+      "appeal_grounds": ["Complication is independent condition", "PED waiting period completed", "Acute condition requiring emergency treatment"],
+      "success_rate": "Medium",
+      "irdai_reference": "Policy terms on PED complications",
+      "documents_needed": ["Doctor's opinion on causation", "Medical literature supporting independence"]
+    },
+    "WP-001": {
+      "code": "WP-001",
+      "category": "Waiting Period",
+      "description": "Initial waiting period of 30 days not completed",
+      "common_causes": ["Claim within first 30 days", "Non-accident illness in initial period"],
+      "appeal_grounds": ["Condition resulted from accident", "Emergency admission", "Waiting period calculation error", "Portability credit not applied"],
+      "success_rate": "Low for illness, High for accident",
+      "irdai_reference": "Standard policy terms - Initial waiting period",
+      "documents_needed": ["Accident report/FIR if applicable", "Emergency certificate"]
+    },
+    "WP-002": {
+      "code": "WP-002",
+      "category": "Waiting Period",
+      "description": "Specific disease waiting period (24 months) not completed",
+      "common_causes": ["Joint replacement within 24 months", "Cataract within 24 months", "Hernia/Hydrocele within waiting period"],
+      "appeal_grounds": ["Waiting period completed", "Emergency/accident exception", "Portability credit from previous policy", "Continuous coverage proof"],
+      "success_rate": "Medium",
+      "irdai_reference": "IRDAI Health Insurance Regulations 2016",
+      "documents_needed": ["Previous policy documents", "Portability certificate", "Emergency certificate if applicable"]
+    },
+    "WP-003": {
+      "code": "WP-003",
+      "category": "Waiting Period",
+      "description": "Maternity waiting period (36-48 months) not completed",
+      "common_causes": ["Delivery before waiting period completion", "Maternity complications"],
+      "appeal_grounds": ["Waiting period completed", "Emergency complication (not routine delivery)", "Ectopic pregnancy as emergency"],
+      "success_rate": "Low for normal, Medium for complications",
+      "irdai_reference": "Policy maternity waiting period clause",
+      "documents_needed": ["Policy inception date proof", "Medical emergency certificate"]
+    },
+    "WP-004": {
+      "code": "WP-004",
+      "category": "Waiting Period",
+      "description": "Mental illness waiting period not completed",
+      "common_causes": ["Psychiatric treatment within waiting period", "Mental health claim too early"],
+      "appeal_grounds": ["Waiting period completed", "Emergency psychiatric admission", "Mental Healthcare Act 2017 parity requirements"],
+      "success_rate": "Medium",
+      "irdai_reference": "Mental Healthcare Act 2017, IRDAI parity guidelines",
+      "documents_needed": ["Emergency psychiatric certificate", "Doctor's recommendation for urgent care"]
+    },
+    "EXC-001": {
+      "code": "EXC-001",
+      "category": "Policy Exclusion",
+      "description": "Treatment listed under permanent exclusions - Cosmetic surgery",
+      "common_causes": ["Cosmetic procedure claimed", "Plastic surgery without medical necessity"],
+      "appeal_grounds": ["Reconstructive surgery post-accident", "Medically necessary (not cosmetic)", "Functional impairment correction"],
+      "success_rate": "Medium if medically necessary",
+      "irdai_reference": "Policy exclusion clause on cosmetic surgery",
+      "documents_needed": ["Doctor's certificate of medical necessity", "Photos showing functional impairment"]
+    },
+    "EXC-002": {
+      "code": "EXC-002",
+      "category": "Policy Exclusion",
+      "description": "Dental treatment exclusion",
+      "common_causes": ["Dental surgery claimed", "Root canal/extraction"],
+      "appeal_grounds": ["Dental treatment due to accident", "Jaw fracture treatment", "Oral cancer treatment"],
+      "success_rate": "High for accident-related",
+      "irdai_reference": "Policy dental exclusion clause",
+      "documents_needed": ["Accident report/FIR", "Doctor's certificate linking to accident"]
+    },
+    "EXC-003": {
+      "code": "EXC-003",
+      "category": "Policy Exclusion",
+      "description": "Infertility treatment exclusion",
+      "common_causes": ["IVF claimed", "IUI treatment", "Fertility drugs"],
+      "appeal_grounds": ["Diagnostic procedures should be covered", "Complication during treatment", "Ovarian hyperstimulation as emergency"],
+      "success_rate": "Low for treatment, Medium for complications",
+      "irdai_reference": "Policy infertility exclusion clause",
+      "documents_needed": ["Medical records", "Emergency admission proof if applicable"]
+    },
+    "EXC-004": {
+      "code": "EXC-004",
+      "category": "Policy Exclusion",
+      "description": "Self-inflicted injury exclusion",
+      "common_causes": ["Suicide attempt", "Self-harm injuries"],
+      "appeal_grounds": ["Accidental injury misclassified", "Mental health condition requiring treatment", "Mental Healthcare Act 2017 protections"],
+      "success_rate": "Medium",
+      "irdai_reference": "Mental Healthcare Act 2017",
+      "documents_needed": ["Psychiatric evaluation", "Doctor's opinion on mental health condition"]
+    },
+    "EXC-005": {
+      "code": "EXC-005",
+      "category": "Policy Exclusion",
+      "description": "Treatment related to alcohol/drug abuse",
+      "common_causes": ["Liver disease attributed to alcohol", "Accident under influence"],
+      "appeal_grounds": ["No evidence of alcohol/drug use", "Addiction is medical condition", "Emergency treatment required"],
+      "success_rate": "Medium",
+      "irdai_reference": "Policy exclusion on substance abuse",
+      "documents_needed": ["Medical records showing no substance abuse", "Blood test reports"]
+    },
+    "EXC-006": {
+      "code": "EXC-006",
+      "category": "Policy Exclusion",
+      "description": "Experimental or unproven treatment",
+      "common_causes": ["New treatment protocol", "Off-label drug use", "Clinical trial treatment"],
+      "appeal_grounds": ["Treatment is now standard practice", "FDA/DCGI approved", "No alternative treatment available"],
+      "success_rate": "Low to Medium",
+      "irdai_reference": "Policy experimental treatment exclusion",
+      "documents_needed": ["Medical literature", "Treatment guidelines", "Doctor's justification"]
+    },
+    "EXC-007": {
+      "code": "EXC-007",
+      "category": "Policy Exclusion",
+      "description": "Congenital disease/anomaly exclusion",
+      "common_causes": ["Birth defect treatment", "Genetic condition"],
+      "appeal_grounds": ["Internal congenital covered by some policies", "Complication requiring emergency treatment", "First manifested after policy inception"],
+      "success_rate": "Low to Medium",
+      "irdai_reference": "Policy congenital exclusion clause",
+      "documents_needed": ["Medical records showing first manifestation", "Doctor's opinion"]
+    },
+    "EXC-008": {
+      "code": "EXC-008",
+      "category": "Policy Exclusion",
+      "description": "Weight management/obesity surgery exclusion",
+      "common_causes": ["Bariatric surgery", "Liposuction", "Weight loss treatment"],
+      "appeal_grounds": ["Morbid obesity with comorbidities", "Doctor's recommendation as medical necessity", "Life-threatening obesity"],
+      "success_rate": "Low",
+      "irdai_reference": "Policy obesity exclusion clause",
+      "documents_needed": ["BMI documentation", "Comorbidity records", "Doctor's medical necessity letter"]
+    },
+    "EXC-009": {
+      "code": "EXC-009",
+      "category": "Policy Exclusion",
+      "description": "Vision correction exclusion (spectacles, contact lenses, LASIK)",
+      "common_causes": ["LASIK surgery", "Spectacles claimed", "Refractive error treatment"],
+      "appeal_grounds": ["Medical condition affecting vision (not refractive)", "Accident-related vision damage"],
+      "success_rate": "Low",
+      "irdai_reference": "Policy vision correction exclusion",
+      "documents_needed": ["Medical records showing underlying condition", "Accident report if applicable"]
+    },
+    "EXC-010": {
+      "code": "EXC-010",
+      "category": "Policy Exclusion",
+      "description": "Hearing aids exclusion",
+      "common_causes": ["Hearing aid purchase", "Cochlear implant"],
+      "appeal_grounds": ["Cochlear implant may be covered in some policies", "Hearing loss due to covered illness"],
+      "success_rate": "Low to Medium for cochlear implant",
+      "irdai_reference": "Policy hearing aids exclusion clause",
+      "documents_needs": ["Medical records", "Policy specific coverage check"]
+    },
+    "EXC-011": {
+      "code": "EXC-011",
+      "category": "Policy Exclusion",
+      "description": "Vaccination exclusion",
+      "common_causes": ["Routine vaccination", "Travel vaccines"],
+      "appeal_grounds": ["Post-bite treatment (rabies, tetanus) should be covered", "Vaccination as part of treatment protocol"],
+      "success_rate": "High for post-bite treatment",
+      "irdai_reference": "Policy vaccination clause",
+      "documents_needed": ["Animal bite report", "Doctor's prescription"]
+    },
+    "EXC-012": {
+      "code": "EXC-012",
+      "category": "Policy Exclusion",
+      "description": "War, terrorism, nuclear exclusion",
+      "common_causes": ["Injury during civil unrest", "Blast injuries"],
+      "appeal_grounds": ["Not war/terrorism related", "Civilian casualty during unrest"],
+      "success_rate": "Low",
+      "irdai_reference": "Policy war/terrorism exclusion",
+      "documents_needed": ["Police report", "Media coverage", "Location proof"]
+    },
+    "EXC-013": {
+      "code": "EXC-013",
+      "category": "Policy Exclusion",
+      "description": "Adventure sports/hazardous activity exclusion",
+      "common_causes": ["Paragliding injury", "Scuba diving accident", "Bungee jumping"],
+      "appeal_grounds": ["Activity was not part of adventure sport", "Professional activity covered", "Specific rider for adventure sports exists"],
+      "success_rate": "Low without rider",
+      "irdai_reference": "Policy adventure sports exclusion",
+      "documents_needed": ["Activity details", "Rider documents if purchased"]
+    },
+    "DOC-001": {
+      "code": "DOC-001",
+      "category": "Documentation",
+      "description": "Incomplete or missing documents",
+      "common_causes": ["Bills not submitted", "Medical records incomplete", "Prescription missing"],
+      "appeal_grounds": ["Submit complete documents", "Documents were submitted but lost", "Request for specific document not made within 15 days per IRDAI"],
+      "success_rate": "High",
+      "irdai_reference": "IRDAI claim settlement guidelines - 15 day query period",
+      "documents_needed": ["All requested documents", "Proof of previous submission if applicable"]
+    },
+    "DOC-002": {
+      "code": "DOC-002",
+      "category": "Documentation",
+      "description": "Claim intimation delay beyond policy terms",
+      "common_causes": ["Intimation not given within specified time", "Late claim submission"],
+      "appeal_grounds": ["Emergency situation prevented intimation", "Intimation was given", "Genuine reason for delay", "No prejudice to insurer"],
+      "success_rate": "Medium",
+      "irdai_reference": "Policy terms on intimation, IRDAI guidelines on reasonable delay",
+      "documents_needed": ["Proof of intimation", "Reason for delay documentation"]
+    },
+    "DOC-003": {
+      "code": "DOC-003",
+      "category": "Documentation",
+      "description": "Original bills/documents not submitted",
+      "common_causes": ["Photocopies submitted", "Original with other insurer"],
+      "appeal_grounds": ["Original submitted to primary insurer", "Attested copies acceptable", "Original lost - indemnity bond submitted"],
+      "success_rate": "Medium",
+      "irdai_reference": "IRDAI guidelines on document submission",
+      "documents_needed": ["Indemnity bond", "Attested copies", "Acknowledgment from primary insurer"]
+    },
+    "DOC-004": {
+      "code": "DOC-004",
+      "category": "Documentation",
+      "description": "Claim form errors or inconsistencies",
+      "common_causes": ["Wrong details filled", "Signature mismatch", "Date errors"],
+      "appeal_grounds": ["Submit corrected form", "Typographical error", "Signature verification"],
+      "success_rate": "High",
+      "irdai_reference": "Standard claim processing guidelines",
+      "documents_needed": ["Corrected claim form", "ID proof for verification"]
+    },
+    "DOC-005": {
+      "code": "DOC-005",
+      "category": "Documentation",
+      "description": "Discharge summary inadequate or missing",
+      "common_causes": ["No discharge summary", "Summary lacks diagnosis details"],
+      "appeal_grounds": ["Obtain detailed summary from hospital", "Doctor's certificate supplementing summary"],
+      "success_rate": "High",
+      "irdai_reference": "Claim documentation requirements",
+      "documents_needed": ["Detailed discharge summary", "Doctor's certificate"]
+    },
+    "MN-001": {
+      "code": "MN-001",
+      "category": "Medical Necessity",
+      "description": "Treatment deemed not medically necessary",
+      "common_causes": ["Elective procedure", "Treatment could be OPD", "Conservative treatment available"],
+      "appeal_grounds": ["Doctor's certificate of necessity", "Emergency admission", "No alternative treatment", "Standard treatment guidelines support"],
+      "success_rate": "Medium",
+      "irdai_reference": "Standard treatment guidelines, IRDAI medical necessity criteria",
+      "documents_needed": ["Doctor's medical necessity certificate", "Treatment rationale", "Clinical guidelines reference"]
+    },
+    "MN-002": {
+      "code": "MN-002",
+      "category": "Medical Necessity",
+      "description": "Hospitalization not required - could be treated as OPD/day care",
+      "common_causes": ["Diagnostic admission", "Observation admission", "Short procedure"],
+      "appeal_grounds": ["Doctor's certificate for IPD necessity", "Complications during procedure", "Age/condition warranted admission", "Post-operative monitoring needed"],
+      "success_rate": "Medium",
+      "irdai_reference": "IRDAI guidelines on hospitalization",
+      "documents_needed": ["Doctor's justification for IPD", "Complication records", "Monitoring requirements"]
+    },
+    "MN-003": {
+      "code": "MN-003",
+      "category": "Medical Necessity",
+      "description": "Extended hospital stay not justified",
+      "common_causes": ["Stay longer than typical", "Recovery at home possible"],
+      "appeal_grounds": ["Complications during recovery", "Doctor's recommendation", "Patient condition required monitoring"],
+      "success_rate": "Medium",
+      "irdai_reference": "Standard treatment guidelines",
+      "documents_needed": ["Daily progress notes", "Doctor's justification", "Complication records"]
+    },
+    "MN-004": {
+      "code": "MN-004",
+      "category": "Medical Necessity",
+      "description": "Procedure/investigation not warranted for diagnosis",
+      "common_causes": ["Excessive tests", "Unnecessary investigations", "Protocol deviation"],
+      "appeal_grounds": ["Standard diagnostic protocol", "Doctor's clinical judgment", "Differential diagnosis required tests"],
+      "success_rate": "Medium",
+      "irdai_reference": "Standard treatment guidelines",
+      "documents_needed": ["Doctor's justification", "Clinical guidelines supporting tests"]
+    },
+    "MN-005": {
+      "code": "MN-005",
+      "category": "Medical Necessity",
+      "description": "Alternative cheaper treatment available",
+      "common_causes": ["Expensive drug when generic available", "Advanced surgery vs conservative"],
+      "appeal_grounds": ["Cheaper alternative contraindicated", "Doctor's specific recommendation", "Previous treatment failure"],
+      "success_rate": "Medium",
+      "irdai_reference": "Policy terms on reasonable treatment",
+      "documents_needed": ["Doctor's justification", "Records of previous treatment attempts"]
+    },
+    "PA-001": {
+      "code": "PA-001",
+      "category": "Pre-Authorization",
+      "description": "Pre-authorization not obtained for planned admission",
+      "common_causes": ["No pre-auth for planned surgery", "Authorization expired", "Wrong hospital for cashless"],
+      "appeal_grounds": ["Emergency admission exception", "Pre-auth was obtained (provide proof)", "Convert to reimbursement claim", "TPA delay in responding"],
+      "success_rate": "Medium to High for emergency",
+      "irdai_reference": "IRDAI cashless claim guidelines - 1hr planned, 2hr emergency response",
+      "documents_needed": ["Pre-auth request proof", "Emergency certificate", "TPA communication records"]
+    },
+    "PA-002": {
+      "code": "PA-002",
+      "category": "Pre-Authorization",
+      "description": "Procedure performed different from pre-authorization",
+      "common_causes": ["Treatment changed during hospitalization", "Additional procedures performed", "Diagnosis changed after admission"],
+      "appeal_grounds": ["Medical emergency required change", "Doctor's certificate", "Enhancement request was pending", "Intraoperative findings"],
+      "success_rate": "Medium",
+      "irdai_reference": "Cashless facility guidelines",
+      "documents_needed": ["Surgery notes showing reason for change", "Doctor's certificate", "Enhancement request copy"]
+    },
+    "PA-003": {
+      "code": "PA-003",
+      "category": "Pre-Authorization",
+      "description": "Pre-authorization denied by TPA/insurer",
+      "common_causes": ["Coverage query", "Medical necessity question", "Exclusion suspected"],
+      "appeal_grounds": ["Challenge denial grounds", "Provide additional documentation", "Emergency proceeding without waiting"],
+      "success_rate": "Medium",
+      "irdai_reference": "IRDAI pre-authorization guidelines",
+      "documents_needed": ["Pre-auth denial letter", "Additional medical records", "Doctor's justification"]
+    },
+    "PA-004": {
+      "code": "PA-004",
+      "category": "Pre-Authorization",
+      "description": "TPA did not respond to pre-authorization request in time",
+      "common_causes": ["No response within mandated time", "Communication failure"],
+      "appeal_grounds": ["IRDAI mandates 1hr response for planned, 2hr for emergency", "Deemed approval argument", "Proceed with treatment and claim reimbursement"],
+      "success_rate": "High",
+      "irdai_reference": "IRDAI circular on pre-auth response times",
+      "documents_needed": ["Pre-auth request with timestamp", "Communication records", "TPA response (or lack thereof)"]
+    },
+    "NW-001": {
+      "code": "NW-001",
+      "category": "Network",
+      "description": "Non-network hospital used - cashless not available",
+      "common_causes": ["Hospital not in TPA network", "Hospital empanelment expired"],
+      "appeal_grounds": ["Emergency admission at nearest hospital", "No network hospital nearby", "Network hospital referred patient", "Convert to reimbursement"],
+      "success_rate": "High for reimbursement",
+      "irdai_reference": "IRDAI guidelines on non-network claims",
+      "documents_needed": ["Emergency certificate", "Referral letter", "Distance proof to nearest network hospital"]
+    },
+    "NW-002": {
+      "code": "NW-002",
+      "category": "Network",
+      "description": "Hospital empanelment suspended",
+      "common_causes": ["Hospital under investigation", "Empanelment issues"],
+      "appeal_grounds": ["Patient unaware of suspension", "Claim reimbursement instead", "Treatment was genuine"],
+      "success_rate": "Medium",
+      "irdai_reference": "TPA network guidelines",
+      "documents_needed": ["Admission proof", "Treatment records", "Patient declaration of unawareness"]
+    },
+    "SL-001": {
+      "code": "SL-001",
+      "category": "Sub-Limits",
+      "description": "Room rent exceeds policy sub-limit",
+      "common_causes": ["Room category higher than entitled", "Single room when twin sharing entitled"],
+      "appeal_grounds": ["No room in entitled category available", "ICU only option", "Hospital certificate of non-availability"],
+      "success_rate": "Medium",
+      "irdai_reference": "Policy schedule sub-limits",
+      "documents_needed": ["Hospital room availability certificate", "Admission records showing room allotment"]
+    },
+    "SL-002": {
+      "code": "SL-002",
+      "category": "Sub-Limits",
+      "description": "ICU charges exceed sub-limit",
+      "common_causes": ["ICU rate higher than policy limit", "Extended ICU stay"],
+      "appeal_grounds": ["ICU medically necessary", "No step-down available", "Condition required intensive monitoring"],
+      "success_rate": "Low to Medium",
+      "irdai_reference": "Policy ICU sub-limit clause",
+      "documents_needed": ["ICU admission justification", "Doctor's certificate"]
+    },
+    "SL-003": {
+      "code": "SL-003",
+      "category": "Sub-Limits",
+      "description": "Disease-specific sub-limit applied (cataract, hernia, etc.)",
+      "common_causes": ["Cataract surgery capped", "Maternity sub-limit", "Specific disease cap"],
+      "appeal_grounds": ["Complications warranted higher expense", "Sub-limit wrongly applied", "Emergency component should be separate"],
+      "success_rate": "Low",
+      "irdai_reference": "Policy schedule disease-wise sub-limits",
+      "documents_needed": ["Complication records", "Itemized bill showing emergency vs elective components"]
+    },
+    "SL-004": {
+      "code": "SL-004",
+      "category": "Sub-Limits",
+      "description": "Ambulance charges exceed limit",
+      "common_causes": ["Air ambulance claimed", "Long distance transport"],
+      "appeal_grounds": ["Emergency required air ambulance", "Distance to nearest hospital", "Doctor's recommendation"],
+      "success_rate": "Low to Medium",
+      "irdai_reference": "Policy ambulance sub-limit",
+      "documents_needed": ["Ambulance bills", "Doctor's recommendation", "Distance calculation"]
+    },
+    "AMT-001": {
+      "code": "AMT-001",
+      "category": "Amount Dispute",
+      "description": "Proportionate deduction due to room rent excess",
+      "common_causes": ["All charges reduced proportionately", "Room rent exceeded entitled limit"],
+      "appeal_grounds": ["Room upgrade not by choice", "Only entitled room not available (hospital certificate)", "Proportionate calculation incorrect"],
+      "success_rate": "Medium",
+      "irdai_reference": "Policy terms on proportionate deduction",
+      "documents_needed": ["Room availability certificate from hospital", "Calculation challenge"]
+    },
+    "AMT-002": {
+      "code": "AMT-002",
+      "category": "Amount Dispute",
+      "description": "Non-payable items deducted",
+      "common_causes": ["Consumables deducted", "Administrative charges", "Gloves, syringes, etc."],
+      "appeal_grounds": ["Items were medically necessary", "Part of treatment package", "IRDAI standard list of non-payables not followed correctly"],
+      "success_rate": "Medium",
+      "irdai_reference": "IRDAI list of non-payable items",
+      "documents_needed": ["Itemized bill", "Doctor's justification for consumables"]
+    },
+    "AMT-003": {
+      "code": "AMT-003",
+      "category": "Amount Dispute",
+      "description": "Co-payment applied incorrectly",
+      "common_causes": ["Higher co-pay than policy", "Co-pay on wrong items"],
+      "appeal_grounds": ["Co-pay calculation error", "Policy co-pay terms misapplied", "Emergency exception"],
+      "success_rate": "High if calculation error",
+      "irdai_reference": "Policy co-payment clause",
+      "documents_needed": ["Policy schedule showing correct co-pay", "Calculation details"]
+    },
+    "AMT-004": {
+      "code": "AMT-004",
+      "category": "Amount Dispute",
+      "description": "Deductible not applied correctly",
+      "common_causes": ["Higher deductible than policy", "Deductible applied per claim instead of annual"],
+      "appeal_grounds": ["Deductible already exhausted", "Calculation error", "Policy terms misapplied"],
+      "success_rate": "High if calculation error",
+      "irdai_reference": "Policy deductible clause",
+      "documents_needed": ["Previous claim records showing deductible paid", "Policy schedule"]
+    },
+    "AMT-005": {
+      "code": "AMT-005",
+      "category": "Amount Dispute",
+      "description": "Hospital bill inflation/padding alleged",
+      "common_causes": ["Charges higher than usual", "Duplicate items billed"],
+      "appeal_grounds": ["Standard hospital rates", "No padding - itemized bill accurate", "Metro hospital rates differ from tier-2"],
+      "success_rate": "Medium",
+      "irdai_reference": "Reasonable and customary charges clause",
+      "documents_needed": ["Itemized bill", "Hospital rate card", "Comparison with similar hospitals"]
+    },
+    "AMT-006": {
+      "code": "AMT-006",
+      "category": "Amount Dispute",
+      "description": "Package rate applied instead of itemized billing",
+      "common_causes": ["Package rate lower than actual", "Fixed package for procedure"],
+      "appeal_grounds": ["Complications exceeded package scope", "Additional procedures required", "Package not applicable to case"],
+      "success_rate": "Medium",
+      "irdai_reference": "Hospital-insurer package agreements",
+      "documents_needed": ["Complication records", "Additional procedure justification"]
+    },
+    "FRD-001": {
+      "code": "FRD-001",
+      "category": "Fraud Investigation",
+      "description": "Claim under investigation for suspected fraud",
+      "common_causes": ["Suspicious billing pattern", "Document verification pending", "Hospital under investigation"],
+      "appeal_grounds": ["Investigation completed - no fraud", "Genuine claim with proper bills", "IRDAI timeline violation for investigation"],
+      "success_rate": "Depends on investigation outcome",
+      "irdai_reference": "IRDAI fraud investigation guidelines",
+      "documents_needed": ["All original documents", "Patient statement", "Hospital clarification"]
+    },
+    "FRD-002": {
+      "code": "FRD-002",
+      "category": "Fraud Investigation",
+      "description": "Claim rejected due to hospital fraud/investigation",
+      "common_causes": ["Hospital blacklisted", "Hospital under fraud investigation"],
+      "appeal_grounds": ["Patient was genuine - not party to hospital fraud", "Treatment was real and necessary", "Claim on reimbursement basis"],
+      "success_rate": "Medium",
+      "irdai_reference": "IRDAI guidelines on hospital fraud",
+      "documents_needed": ["Second opinion from another doctor", "Genuine medical records", "Patient declaration"]
+    },
+    "POL-001": {
+      "code": "POL-001",
+      "category": "Policy Status",
+      "description": "Policy lapsed - premium not paid on date of admission",
+      "common_causes": ["Premium not paid", "Policy expired", "Grace period exceeded"],
+      "appeal_grounds": ["Premium was paid (bank proof)", "Within grace period", "Revival with continuity", "Bank payment delay not patient's fault"],
+      "success_rate": "High with payment proof",
+      "irdai_reference": "Insurance Act Section 64VB, grace period rules",
+      "documents_needed": ["Bank payment receipt", "Premium payment confirmation", "Grace period calculation"]
+    },
+    "POL-002": {
+      "code": "POL-002",
+      "category": "Policy Status",
+      "description": "Insured person not covered under policy",
+      "common_causes": ["Family member not added", "Dependent age exceeded", "Member deleted from policy"],
+      "appeal_grounds": ["Member was added (endorsement proof)", "Age calculation error", "Renewal included member"],
+      "success_rate": "High with proof",
+      "irdai_reference": "Policy member schedule",
+      "documents_needed": ["Policy schedule showing members", "Endorsement copy", "Premium receipt for member"]
+    },
+    "POL-003": {
+      "code": "POL-003",
+      "category": "Policy Status",
+      "description": "Sum insured exhausted",
+      "common_causes": ["Previous claims consumed SI", "No restore benefit", "Super top-up not triggered"],
+      "appeal_grounds": ["Restore benefit available", "Calculation error", "Super top-up should apply"],
+      "success_rate": "Medium",
+      "irdai_reference": "Policy sum insured and restore clauses",
+      "documents_needed": ["Previous claim statements", "Policy restore clause", "Super top-up policy if any"]
+    },
+    "POL-004": {
+      "code": "POL-004",
+      "category": "Policy Status",
+      "description": "Claim filed on wrong policy",
+      "common_causes": ["Multiple policies", "Corporate vs personal policy", "Old policy number used"],
+      "appeal_grounds": ["Redirect claim to correct policy", "Both policies should respond", "Administrative error"],
+      "success_rate": "High",
+      "irdai_reference": "Policy identification",
+      "documents_needed": ["Correct policy documents", "Claim redirection request"]
+    },
+    "POL-005": {
+      "code": "POL-005",
+      "category": "Policy Status",
+      "description": "Policy cancelled/voided by insurer",
+      "common_causes": ["Fraud detected", "Material misrepresentation", "Premium cheque bounced"],
+      "appeal_grounds": ["Cancellation improper", "No fraud - reinstate policy", "Cheque bounce rectified"],
+      "success_rate": "Medium",
+      "irdai_reference": "Policy cancellation guidelines, Section 45",
+      "documents_needed": ["Cancellation notice", "Reinstatement request", "Payment proof"]
+    },
+    "COB-001": {
+      "code": "COB-001",
+      "category": "Coordination of Benefits",
+      "description": "Claim payable under other insurance first",
+      "common_causes": ["Multiple policies", "Corporate policy exists", "Group insurance primary"],
+      "appeal_grounds": ["Other policy already paid", "This policy should be primary", "Contribution clause applies"],
+      "success_rate": "Medium",
+      "irdai_reference": "Contribution clause, COB guidelines",
+      "documents_needed": ["Settlement letter from other insurer", "Both policy documents", "Bill copies"]
+    },
+    "COB-002": {
+      "code": "COB-002",
+      "category": "Coordination of Benefits",
+      "description": "Claim already settled by another insurer",
+      "common_causes": ["Duplicate claim", "Amount already received"],
+      "appeal_grounds": ["Partial claim from first insurer", "Balance claim legitimate", "Contribution method claim"],
+      "success_rate": "High for balance",
+      "irdai_reference": "IRDAI contribution guidelines",
+      "documents_needed": ["First insurer settlement letter", "Balance amount calculation", "Original bills if available"]
+    },
+    "MH-001": {
+      "code": "MH-001",
+      "category": "Mental Health",
+      "description": "Mental health claim rejected - not covered",
+      "common_causes": ["Psychiatric treatment denied", "Mental illness exclusion cited"],
+      "appeal_grounds": ["Mental Healthcare Act 2017 mandates parity", "IRDAI guidelines on mental health coverage", "Discrimination against mental illness"],
+      "success_rate": "High",
+      "irdai_reference": "Mental Healthcare Act 2017, IRDAI parity guidelines",
+      "documents_needed": ["Policy copy", "Mental Healthcare Act reference", "Doctor's prescription"]
+    },
+    "MH-002": {
+      "code": "MH-002",
+      "category": "Mental Health",
+      "description": "Mental health hospitalization questioned",
+      "common_causes": ["OPD treatment suggested", "Hospitalization not necessary"],
+      "appeal_grounds": ["Psychiatrist's recommendation", "Risk of self-harm/harm to others", "Intensive treatment required"],
+      "success_rate": "Medium",
+      "irdai_reference": "Mental Healthcare Act 2017",
+      "documents_needed": ["Psychiatrist's certificate", "Risk assessment", "Treatment plan"]
+    },
+    "AYUSH-001": {
+      "code": "AYUSH-001",
+      "category": "AYUSH Treatment",
+      "description": "AYUSH treatment claim rejected",
+      "common_causes": ["Ayurveda not covered", "AYUSH hospital not recognized"],
+      "appeal_grounds": ["IRDAI mandates AYUSH coverage in many policies", "Government recognized AYUSH hospital", "Policy includes AYUSH benefit"],
+      "success_rate": "Medium to High",
+      "irdai_reference": "IRDAI AYUSH guidelines, policy AYUSH clause",
+      "documents_needed": ["Hospital recognition certificate", "Policy AYUSH clause", "Treatment records"]
+    },
+    "AYUSH-002": {
+      "code": "AYUSH-002",
+      "category": "AYUSH Treatment",
+      "description": "AYUSH treatment sub-limit applied",
+      "common_causes": ["AYUSH has lower limit than allopathy", "Capped benefit"],
+      "appeal_grounds": ["Sub-limit calculation error", "Same limits should apply as allopathy", "Emergency AYUSH treatment"],
+      "success_rate": "Low to Medium",
+      "irdai_reference": "Policy AYUSH sub-limit clause",
+      "documents_needed": ["Policy schedule", "Calculation challenge"]
+    },
+    "DAY-001": {
+      "code": "DAY-001",
+      "category": "Day Care",
+      "description": "Day care procedure claim rejected",
+      "common_causes": ["Procedure not in day care list", "Less than 24hr stay questioned"],
+      "appeal_grounds": ["Procedure is listed day care", "Technology advancement allows day care", "IRDAI day care list includes procedure"],
+      "success_rate": "Medium to High",
+      "irdai_reference": "IRDAI day care procedures list",
+      "documents_needed": ["IRDAI day care list reference", "Doctor's certificate"]
+    },
+    "DAY-002": {
+      "code": "DAY-002",
+      "category": "Day Care",
+      "description": "Day care converted to regular admission - additional charges questioned",
+      "common_causes": ["Complication during day care", "Extended stay needed"],
+      "appeal_grounds": ["Genuine complication", "Doctor's recommendation for extended stay", "Emergency conversion"],
+      "success_rate": "Medium",
+      "irdai_reference": "Day care claim guidelines",
+      "documents_needed": ["Complication records", "Doctor's certificate", "Extended stay justification"]
+    },
+    "PRE-001": {
+      "code": "PRE-001",
+      "category": "Pre/Post Hospitalization",
+      "description": "Pre-hospitalization expenses beyond covered period",
+      "common_causes": ["Expenses older than 60 days before admission", "Unrelated expenses claimed"],
+      "appeal_grounds": ["Expenses within 60-day period", "Related to hospitalization", "Chronic condition management"],
+      "success_rate": "Medium",
+      "irdai_reference": "Policy pre-hospitalization clause",
+      "documents_needed": ["Dated bills and prescriptions", "Doctor's certificate linking expenses to admission"]
+    },
+    "POST-001": {
+      "code": "POST-001",
+      "category": "Pre/Post Hospitalization",
+      "description": "Post-hospitalization expenses beyond covered period",
+      "common_causes": ["Expenses beyond 90 days after discharge", "Unrelated follow-up"],
+      "appeal_grounds": ["Expenses within 90-day period", "Continuous treatment related to hospitalization", "Complications requiring extended follow-up"],
+      "success_rate": "Medium",
+      "irdai_reference": "Policy post-hospitalization clause",
+      "documents_needed": ["Follow-up records", "Doctor's certificate", "Treatment continuity proof"]
+    },
+    "DOM-001": {
+      "code": "DOM-001",
+      "category": "Domiciliary",
+      "description": "Domiciliary/home hospitalization claim rejected",
+      "common_causes": ["Home treatment not qualifying", "Less than 3 days treatment"],
+      "appeal_grounds": ["Hospital bed not available", "Condition required home treatment", "Doctor recommended domiciliary"],
+      "success_rate": "Low to Medium",
+      "irdai_reference": "Policy domiciliary hospitalization clause",
+      "documents_needed": ["Doctor's recommendation", "Hospital non-availability proof", "3+ days treatment proof"]
+    },
+    "OPD-001": {
+      "code": "OPD-001",
+      "category": "OPD",
+      "description": "OPD expenses claimed on IPD-only policy",
+      "common_causes": ["No OPD cover", "Wrong policy used"],
+      "appeal_grounds": ["OPD linked to hospitalization (pre/post)", "Emergency OPD before admission", "Super top-up OPD benefit"],
+      "success_rate": "Low without OPD cover",
+      "irdai_reference": "Policy OPD coverage clause",
+      "documents_needed": ["Policy schedule showing OPD benefit if any", "Hospitalization link"]
+    },
+    "AGE-001": {
+      "code": "AGE-001",
+      "category": "Age Related",
+      "description": "Age limit exceeded for coverage",
+      "common_causes": ["Entry age exceeded", "Renewal age limit crossed"],
+      "appeal_grounds": ["Age calculation error", "Lifetime renewal guaranteed", "IRDAI senior citizen guidelines"],
+      "success_rate": "Medium",
+      "irdai_reference": "IRDAI senior citizen insurance guidelines",
+      "documents_needed": ["Age proof", "Policy renewal history", "Lifetime renewal clause"]
+    },
+    "TPA-001": {
+      "code": "TPA-001",
+      "category": "TPA Issues",
+      "description": "TPA processing error or delay",
+      "common_causes": ["TPA lost documents", "TPA system issues", "Incorrect processing"],
+      "appeal_grounds": ["Escalate to insurer directly", "IRDAI complaint against TPA", "Interest for delay"],
+      "success_rate": "High",
+      "irdai_reference": "IRDAI TPA regulations",
+      "documents_needed": ["Communication with TPA", "Document submission proof", "Delay documentation"]
+    },
+    "TPA-002": {
+      "code": "TPA-002",
+      "category": "TPA Issues",
+      "description": "TPA opinion differs from insurer approval",
+      "common_causes": ["TPA rejected but insurer may approve", "Conflicting decisions"],
+      "appeal_grounds": ["Escalate to insurer", "TPA opinion not final", "Insurer must review"],
+      "success_rate": "Medium",
+      "irdai_reference": "IRDAI TPA guidelines",
+      "documents_needed": ["TPA rejection", "Appeal to insurer", "Additional documentation"]
+    },
+    "NCB-001": {
+      "code": "NCB-001",
+      "category": "No Claim Bonus",
+      "description": "No Claim Bonus not applied correctly",
+      "common_causes": ["NCB not added", "NCB reduced wrongly after claim"],
+      "appeal_grounds": ["NCB entitlement proof", "Calculation error", "Protected NCB clause"],
+      "success_rate": "High",
+      "irdai_reference": "Policy NCB clause",
+      "documents_needed": ["Previous policy showing NCB", "Renewal documents", "Protected NCB rider if any"]
+    },
+    "MATERNITY-001": {
+      "code": "MATERNITY-001",
+      "category": "Maternity",
+      "description": "Normal delivery charges rejected",
+      "common_causes": ["Maternity not covered", "Waiting period not completed"],
+      "appeal_grounds": ["Waiting period completed", "Emergency C-section", "Complications during delivery"],
+      "success_rate": "Medium",
+      "irdai_reference": "Policy maternity clause",
+      "documents_needed": ["Policy inception proof", "Delivery records", "Waiting period calculation"]
+    },
+    "MATERNITY-002": {
+      "code": "MATERNITY-002",
+      "category": "Maternity",
+      "description": "C-section claimed but normal delivery rates applied",
+      "common_causes": ["Insurer treating as normal delivery", "Sub-limit for C-section"],
+      "appeal_grounds": ["Medical necessity of C-section", "Doctor's recommendation", "Emergency C-section"],
+      "success_rate": "Medium to High",
+      "irdai_reference": "Maternity coverage guidelines",
+      "documents_needed": ["C-section medical indication", "Doctor's certificate", "Operation notes"]
+    },
+    "MATERNITY-003": {
+      "code": "MATERNITY-003",
+      "category": "Maternity",
+      "description": "Newborn baby expenses not covered",
+      "common_causes": ["Baby not added to policy", "Baby complications separate policy needed"],
+      "appeal_grounds": ["Baby covered from birth under family floater", "Emergency newborn care", "Policy terms on newborn coverage"],
+      "success_rate": "Medium",
+      "irdai_reference": "Family floater coverage for newborn",
+      "documents_needed": ["Policy terms on newborn", "Birth certificate", "Medical records"]
+    },
+    "CANCER-001": {
+      "code": "CANCER-001",
+      "category": "Cancer Treatment",
+      "description": "Cancer treatment rejected as pre-existing",
+      "common_causes": ["Cancer diagnosed before policy", "Treatment for recurrence"],
+      "appeal_grounds": ["New cancer diagnosis after policy", "8-year moratorium", "Different type of cancer"],
+      "success_rate": "Medium to High after moratorium",
+      "irdai_reference": "Section 45, Cancer treatment guidelines",
+      "documents_needed": ["Oncology reports", "Pathology reports", "Previous treatment records"]
+    },
+    "CANCER-002": {
+      "code": "CANCER-002",
+      "category": "Cancer Treatment",
+      "description": "Chemotherapy/radiotherapy caps applied",
+      "common_causes": ["Per-session limits", "Total treatment limits"],
+      "appeal_grounds": ["No sub-limits in policy", "Treatment protocol requirements", "Life-threatening condition"],
+      "success_rate": "Medium",
+      "irdai_reference": "Policy sub-limit clause",
+      "documents_needed": ["Treatment protocol from oncologist", "No sub-limit clause proof"]
+    },
+    "CARDIAC-001": {
+      "code": "CARDIAC-001",
+      "category": "Cardiac Treatment",
+      "description": "Cardiac surgery/angioplasty rejected as PED",
+      "common_causes": ["Hypertension as PED", "Prior cardiac history"],
+      "appeal_grounds": ["Acute cardiac event", "No prior heart disease", "8-year moratorium"],
+      "success_rate": "Medium",
+      "irdai_reference": "Section 45, Cardiac emergency guidelines",
+      "documents_needed": ["ECG reports", "Cardiac markers", "Previous health records"]
+    },
+    "CARDIAC-002": {
+      "code": "CARDIAC-002",
+      "category": "Cardiac Treatment",
+      "description": "Stent costs not fully covered",
+      "common_causes": ["Non-NPPA stent used", "Medicated stent premium charged"],
+      "appeal_grounds": ["NPPA capped stent used", "Doctor's recommendation for specific stent", "Emergency requirement"],
+      "success_rate": "High with NPPA compliance",
+      "irdai_reference": "NPPA stent price caps",
+      "documents_needed": ["Stent price compliance proof", "Doctor's recommendation", "Invoice details"]
+    },
+    "KIDNEY-001": {
+      "code": "KIDNEY-001",
+      "category": "Renal Treatment",
+      "description": "Dialysis sessions limited or rejected",
+      "common_causes": ["Per-session caps", "Maximum sessions per year"],
+      "appeal_grounds": ["Medical necessity", "No sub-limit in policy", "Life-sustaining treatment"],
+      "success_rate": "Medium",
+      "irdai_reference": "Policy sub-limit clause, dialysis guidelines",
+      "documents_needed": ["Nephrologist recommendation", "Policy terms", "Treatment schedule"]
+    },
+    "KIDNEY-002": {
+      "code": "KIDNEY-002",
+      "category": "Renal Treatment",
+      "description": "Kidney transplant rejected",
+      "common_causes": ["PED exclusion", "Waiting period for transplant"],
+      "appeal_grounds": ["Waiting period completed", "Emergency transplant", "8-year moratorium"],
+      "success_rate": "Medium",
+      "irdai_reference": "Transplant coverage guidelines",
+      "documents_needed": ["Transplant necessity certificate", "Waiting list documentation", "Donor evaluation reports"]
+    },
+    "ORTHO-001": {
+      "code": "ORTHO-001",
+      "category": "Orthopedic",
+      "description": "Joint replacement within waiting period",
+      "common_causes": ["24-month waiting period not complete", "Elective surgery"],
+      "appeal_grounds": ["Emergency due to fracture", "Waiting period completed", "Portability credit"],
+      "success_rate": "High for emergency",
+      "irdai_reference": "Specific disease waiting period",
+      "documents_needed": ["Emergency certificate", "X-ray/MRI reports", "Previous policy documents"]
+    },
+    "ORTHO-002": {
+      "code": "ORTHO-002",
+      "category": "Orthopedic",
+      "description": "Implant costs not fully covered",
+      "common_causes": ["Implant sub-limits", "Non-standard implants used"],
+      "appeal_grounds": ["Doctor's recommendation", "No alternative implant suitable", "Standard pricing used"],
+      "success_rate": "Medium",
+      "irdai_reference": "Implant pricing guidelines",
+      "documents_needed": ["Doctor's implant recommendation", "Invoice with pricing", "Alternative availability proof"]
+    },
+    "NEURO-001": {
+      "code": "NEURO-001",
+      "category": "Neurological",
+      "description": "Brain surgery rejected as PED",
+      "common_causes": ["Prior headaches cited", "Neurological history"],
+      "appeal_grounds": ["Acute neurological emergency", "No prior brain condition", "8-year moratorium"],
+      "success_rate": "Medium to High for emergencies",
+      "irdai_reference": "Emergency treatment guidelines",
+      "documents_needed": ["CT/MRI reports", "Neurosurgeon certificate", "Emergency admission records"]
+    },
+    "NEURO-002": {
+      "code": "NEURO-002",
+      "category": "Neurological",
+      "description": "Spine surgery rejected or limited",
+      "common_causes": ["Degenerative condition", "PED exclusion for back pain"],
+      "appeal_grounds": ["Acute disc prolapse", "Neurological emergency", "No prior spine treatment"],
+      "success_rate": "Medium",
+      "irdai_reference": "Spine treatment guidelines",
+      "documents_needed": ["MRI reports", "Neurosurgeon/orthopedic certificate", "Emergency records"]
+    },
+    "DIABETES-001": {
+      "code": "DIABETES-001",
+      "category": "Diabetes Related",
+      "description": "Diabetes complications rejected as PED",
+      "common_causes": ["Diabetes as underlying PED", "Complication linked to diabetes"],
+      "appeal_grounds": ["8-year moratorium exceeded", "Acute complication", "Diabetes disclosed and accepted"],
+      "success_rate": "High after 8 years",
+      "irdai_reference": "Section 45, Diabetes complication guidelines",
+      "documents_needed": ["Proposal form showing disclosure", "Policy acceptance letter", "8-year proof"]
+    },
+    "DIABETES-002": {
+      "code": "DIABETES-002",
+      "category": "Diabetes Related",
+      "description": "Diabetic foot/amputation rejected",
+      "common_causes": ["Chronic condition", "Gangrene from diabetes"],
+      "appeal_grounds": ["Acute infection requiring surgery", "Life-threatening condition", "8-year moratorium"],
+      "success_rate": "Medium",
+      "irdai_reference": "Emergency surgical treatment",
+      "documents_needed": ["Infection reports", "Surgery urgency certificate", "HbA1c history"]
+    },
+    "COVID-001": {
+      "code": "COVID-001",
+      "category": "COVID-19",
+      "description": "COVID-19 treatment rejected",
+      "common_causes": ["Home isolation claimed as hospitalization", "Post-COVID complications"],
+      "appeal_grounds": ["IRDAI COVID guidelines", "Hospitalization was required", "Hospital occupancy issues"],
+      "success_rate": "Medium to High",
+      "irdai_reference": "IRDAI COVID-19 claims circular",
+      "documents_needed": ["COVID positive report", "Hospital/doctor records", "Oxygen requirement proof"]
+    },
+    "COVID-002": {
+      "code": "COVID-002",
+      "category": "COVID-19",
+      "description": "Post-COVID complications rejected as exclusion",
+      "common_causes": ["Lung fibrosis post-COVID", "Cardiac complications"],
+      "appeal_grounds": ["Direct COVID complication", "New condition not PED", "IRDAI COVID guidelines"],
+      "success_rate": "Medium",
+      "irdai_reference": "IRDAI post-COVID claims guidelines",
+      "documents_needed": ["COVID treatment history", "Complication diagnosis", "Doctor's causation certificate"]
+    },
+    "MISC-001": {
+      "code": "MISC-001",
+      "category": "Miscellaneous",
+      "description": "Claim rejected due to treatment abroad",
+      "common_causes": ["Treatment outside India", "Foreign hospital"],
+      "appeal_grounds": ["Emergency while traveling", "Treatment not available in India", "Travel insurance rider"],
+      "success_rate": "Low to Medium",
+      "irdai_reference": "Policy territorial limits",
+      "documents_needed": ["Emergency proof", "Treatment non-availability in India", "Travel insurance documents"]
+    },
+    "MISC-002": {
+      "code": "MISC-002",
+      "category": "Miscellaneous",
+      "description": "Self-inflicted injury/suicide attempt rejected",
+      "common_causes": ["Policy exclusion for self-harm", "Suicide attempt"],
+      "appeal_grounds": ["Mental health condition requiring treatment", "Mental Healthcare Act protection", "Medical emergency"],
+      "success_rate": "Medium with mental health angle",
+      "irdai_reference": "Mental Healthcare Act 2017",
+      "documents_needed": ["Psychiatric evaluation", "Mental health treatment records", "Doctor's certificate"]
+    },
+    "MISC-003": {
+      "code": "MISC-003",
+      "category": "Miscellaneous",
+      "description": "Claim rejected due to alcohol intoxication",
+      "common_causes": ["Accident under influence", "Policy exclusion for alcohol"],
+      "appeal_grounds": ["Alcohol not cause of injury", "Treatment was for medical condition", "Chronic alcoholism as disease"],
+      "success_rate": "Low",
+      "irdai_reference": "Policy exclusion clause",
+      "documents_needed": ["Police report", "Blood alcohol report", "Doctor's causation opinion"]
+    },
+    "MISC-004": {
+      "code": "MISC-004",
+      "category": "Miscellaneous",
+      "description": "Adventure sports injury rejected",
+      "common_causes": ["Extreme sports exclusion", "Hazardous activity"],
+      "appeal_grounds": ["Standard recreational activity", "Not professional sports", "Sports injury rider"],
+      "success_rate": "Low without rider",
+      "irdai_reference": "Policy exclusion for hazardous sports",
+      "documents_needed": ["Activity details", "Sports injury rider if any", "Standard safety precautions taken"]
+    },
+    "MISC-005": {
+      "code": "MISC-005",
+      "category": "Miscellaneous",
+      "description": "War/terrorism injury rejected",
+      "common_causes": ["Injury in conflict zone", "Terrorist attack"],
+      "appeal_grounds": ["Civilian victim", "Not active participant", "Terror cover rider"],
+      "success_rate": "Medium for civilian victims",
+      "irdai_reference": "Policy exclusion for war/terrorism",
+      "documents_needed": ["Police report", "Government compensation if any", "Civilian status proof"]
+    }
+  },
+  "rejection_categories": {
+    "pre_existing_disease": {
+      "codes": ["PED-001", "PED-002", "PED-003"],
+      "description": "Claim rejected due to pre-existing disease or non-disclosure",
+      "common_appeal_strategies": [
+        "Verify if 48-month waiting period has passed",
+        "Check if moratorium period (8 years) exceeded - Section 45 Insurance Act",
+        "Request medical records showing first diagnosis date",
+        "Challenge non-disclosure if condition was genuinely unknown",
+        "File complaint with Insurance Ombudsman",
+        "Reference IRDAI Circular 256/11/2020 on moratorium"
+      ]
+    },
+    "waiting_period": {
+      "codes": ["WP-001", "WP-002", "WP-003", "WP-004"],
+      "description": "Waiting period not completed for specific conditions",
+      "common_appeal_strategies": [
+        "Verify waiting period calculation from original policy date",
+        "Check portability credit from previous policy",
+        "Emergency exception argument if applicable",
+        "Continuous coverage proof from previous insurers",
+        "Accident exception for initial waiting period"
+      ]
+    },
+    "exclusions": {
+      "codes": ["EXC-001", "EXC-002", "EXC-003", "EXC-004", "EXC-005", "EXC-006", "EXC-007", "EXC-008", "EXC-009", "EXC-010", "EXC-011", "EXC-012", "EXC-013"],
+      "description": "Treatment falls under policy exclusions",
+      "common_appeal_strategies": [
+        "Challenge if treatment was medically necessary (not elective)",
+        "Accident-related exceptions for dental, cosmetic",
+        "Mental Healthcare Act 2017 for self-harm cases",
+        "Reconstructive vs cosmetic argument",
+        "Treatment protocol required the excluded item"
+      ]
+    },
+    "medical_necessity": {
+      "codes": ["MN-001", "MN-002", "MN-003", "MN-004", "MN-005"],
+      "description": "Treatment or hospitalization deemed not medically necessary",
+      "common_appeal_strategies": [
+        "Obtain detailed doctor's certificate of medical necessity",
+        "Reference standard treatment guidelines",
+        "Document why OPD/conservative treatment was not feasible",
+        "Second medical opinion supporting hospitalization",
+        "Emergency admission records"
+      ]
+    },
+    "documentation": {
+      "codes": ["DOC-001", "DOC-002", "DOC-003", "DOC-004", "DOC-005"],
+      "description": "Document related issues",
+      "common_appeal_strategies": [
+        "Submit complete documents with acknowledgment",
+        "Cite IRDAI 15-day query period if documents not requested timely",
+        "Provide genuine reason for delay in intimation",
+        "Submit attested copies if originals with other insurer",
+        "Indemnity bond for lost originals"
+      ]
+    },
+    "pre_authorization": {
+      "codes": ["PA-001", "PA-002", "PA-003", "PA-004"],
+      "description": "Pre-authorization related rejections",
+      "common_appeal_strategies": [
+        "Emergency exception - IRDAI mandates coverage",
+        "Proof of pre-auth obtained",
+        "TPA response delay (1hr planned, 2hr emergency)",
+        "Convert to reimbursement claim",
+        "Intraoperative changes were medically necessary"
+      ]
+    },
+    "sub_limits": {
+      "codes": ["SL-001", "SL-002", "SL-003", "SL-004"],
+      "description": "Sub-limits applied reducing claim amount",
+      "common_appeal_strategies": [
+        "Hospital certificate that entitled room not available",
+        "ICU stay was medically mandatory",
+        "Complications exceeded disease sub-limit scope",
+        "Challenge proportionate deduction calculation"
+      ]
+    },
+    "amount_disputes": {
+      "codes": ["AMT-001", "AMT-002", "AMT-003", "AMT-004", "AMT-005", "AMT-006"],
+      "description": "Partial payment or deduction disputes",
+      "common_appeal_strategies": [
+        "Challenge calculation methodology",
+        "Room category non-availability proof",
+        "IRDAI non-payable list - verify correct application",
+        "Co-pay/deductible calculation verification",
+        "Complication expenses separate from package"
+      ]
+    },
+    "network_issues": {
+      "codes": ["NW-001", "NW-002"],
+      "description": "Network hospital related issues",
+      "common_appeal_strategies": [
+        "Emergency at nearest hospital",
+        "No network hospital in vicinity",
+        "Patient unaware of hospital suspension",
+        "Convert to reimbursement claim"
+      ]
+    },
+    "policy_status": {
+      "codes": ["POL-001", "POL-002", "POL-003", "POL-004", "POL-005"],
+      "description": "Policy status related rejections",
+      "common_appeal_strategies": [
+        "Premium payment proof",
+        "Grace period applicability",
+        "Member coverage proof",
+        "Sum insured restore benefit",
+        "Redirect claim to correct policy"
+      ]
+    },
+    "mental_health": {
+      "codes": ["MH-001", "MH-002", "WP-004"],
+      "description": "Mental health claim issues",
+      "common_appeal_strategies": [
+        "Mental Healthcare Act 2017 parity requirement",
+        "IRDAI guidelines on mental health coverage",
+        "Psychiatrist's recommendation for hospitalization",
+        "Risk assessment documentation"
+      ]
+    },
+    "ayush": {
+      "codes": ["AYUSH-001", "AYUSH-002"],
+      "description": "AYUSH treatment related issues",
+      "common_appeal_strategies": [
+        "Government recognized AYUSH hospital",
+        "Policy includes AYUSH benefit",
+        "IRDAI guidelines on AYUSH coverage"
+      ]
+    },
+    "investigation": {
+      "codes": ["FRD-001", "FRD-002"],
+      "description": "Fraud investigation related",
+      "common_appeal_strategies": [
+        "Patient not party to hospital fraud",
+        "Treatment was genuine",
+        "Independent medical verification",
+        "IRDAI investigation timeline compliance"
+      ]
+    }
+  },
+  "escalation_contacts": {
+    "irdai_helpline": "155255",
+    "igms_portal": "igms.irda.gov.in",
+    "irdai_email": "complaints@irdai.gov.in",
+    "ombudsman_website": "www.cioins.co.in",
+    "consumer_helpline": "1800-11-4000",
+    "national_consumer_helpline": "1915"
+  },
+  "key_regulations": {
+    "insurance_act_section_45": "Policy cannot be called in question after 3 years (8 years moratorium for health)",
+    "irdai_health_regulations_2016": "Standardized health insurance terms and claim settlement timelines",
+    "mental_healthcare_act_2017": "Mental health coverage parity with physical health",
+    "consumer_protection_act_2019": "Consumer forum remedy for insurance disputes",
+    "irdai_circular_256_2020": "8-year moratorium period for non-disclosure"
+  },
+  "claim_settlement_timelines": {
+    "cashless_pre_auth_planned": "1 hour",
+    "cashless_pre_auth_emergency": "2 hours",
+    "final_discharge_approval": "3 hours",
+    "reimbursement_acknowledgment": "3 working days",
+    "reimbursement_query": "15 days from receipt",
+    "reimbursement_settlement": "30 days from complete documents",
+    "delay_interest": "2% above bank rate"
+  }
+}

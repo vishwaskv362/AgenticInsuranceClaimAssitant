@@ -1,0 +1,142 @@
+═══════════════════════════════════════════════════════════════════════════════
+                         STAR HEALTH AND ALLIED INSURANCE CO. LTD.
+                              CLAIM REJECTION LETTER
+═══════════════════════════════════════════════════════════════════════════════
+
+                                                    दिनांक / Date: 25 January, 2026
+                                                    Reference No.: SH/CLM/2026/MUM/098765
+
+────────────────────────────────────────────────────────────────────────────────
+POLICYHOLDER DETAILS / पॉलिसीधारक विवरण
+────────────────────────────────────────────────────────────────────────────────
+Policyholder Name:      Mr. Rajesh Kumar Sharma
+Policy Number:          SH-FAM-HLTH-2024-5567890
+Member ID:              SHFH245567890
+Policy Type:            Star Family Health Optima
+Sum Insured:            ₹10,00,000/-
+Policy Start Date:      15 March, 2024
+Policy Expiry Date:     14 March, 2027
+
+────────────────────────────────────────────────────────────────────────────────
+CLAIM DETAILS / दावा विवरण
+────────────────────────────────────────────────────────────────────────────────
+Claim Number:           CLM-SH-2026-0098765
+TPA:                    Medi Assist India TPA Pvt. Ltd.
+Date of Admission:      10 January, 2026
+Date of Discharge:      15 January, 2026
+Hospital Name:          Fortis Hospital, Mulund, Mumbai
+Hospital ROHINI ID:     MUM-FOR-12345
+
+Treatment Details:
+- Primary Diagnosis:    Total Knee Replacement Surgery (Left Knee)
+- ICD-10 Code:          M17.1 (Primary Osteoarthritis, Left Knee)
+- Procedure:            Total Knee Arthroplasty
+- Treating Doctor:      Dr. Amit Patel, MS Orthopaedics
+
+────────────────────────────────────────────────────────────────────────────────
+FINANCIAL SUMMARY / वित्तीय सारांश
+────────────────────────────────────────────────────────────────────────────────
+Total Bill Amount:                              ₹4,75,000/-
+Claim Amount Requested:                         ₹4,75,000/-
+Amount Approved:                                ₹0/-
+Amount Rejected:                                ₹4,75,000/-
+Patient Responsibility:                         ₹4,75,000/-
+
+────────────────────────────────────────────────────────────────────────────────
+CLAIM STATUS: REJECTED / दावा स्थिति: अस्वीकृत
+────────────────────────────────────────────────────────────────────────────────
+
+REJECTION CODE: WP-002
+
+REJECTION REASON / अस्वीकृति का कारण:
+Specific Disease Waiting Period Not Completed
+
+Dear Policyholder,
+
+We regret to inform you that your claim for Total Knee Replacement surgery has 
+been rejected for the following reason:
+
+As per the terms and conditions of your policy (Clause 4.2 - Waiting Periods), 
+Joint Replacement Surgery is covered only after completion of a waiting period 
+of 24 months from the policy inception date.
+
+Your Policy Details:
+- Policy Inception Date:     15 March, 2024
+- Date of Surgery:           12 January, 2026
+- Waiting Period Required:   24 months
+- Waiting Period Completed:  10 months only
+
+Since the surgery was performed before completing the mandatory 24-month waiting 
+period for joint replacement procedures, the claim is not payable under your 
+current policy terms.
+
+────────────────────────────────────────────────────────────────────────────────
+YOUR APPEAL RIGHTS / अपील का अधिकार
+────────────────────────────────────────────────────────────────────────────────
+
+You have the right to appeal against this decision. As per IRDAI guidelines:
+
+LEVEL 1 - INTERNAL GRIEVANCE:
+• File grievance with our Grievance Redressal Officer within 30 days
+• Response within 15 working days
+• Email: gro@starhealth.in
+• Phone: 044-28302300
+
+LEVEL 2 - IGMS PORTAL:
+• File online complaint at igms.irda.gov.in
+• IRDAI will monitor resolution
+
+LEVEL 3 - INSURANCE OMBUDSMAN:
+• File complaint with Insurance Ombudsman (free of cost)
+• For claims up to ₹50 lakhs
+• Decision within 3 months
+• Find your Ombudsman at: www.cioins.co.in
+
+LEVEL 4 - CONSUMER FORUM:
+• File under Consumer Protection Act, 2019
+• District Forum for claims up to ₹1 crore
+
+HOW TO FILE APPEAL:
+Mail:       Star Health and Allied Insurance Co. Ltd.
+            Grievance Redressal Cell
+            No.1, New Tank Street, Valluvar Kottam High Road,
+            Nungambakkam, Chennai - 600034
+
+Email:      gro@starhealth.in
+Phone:      044-28302300 / 1800-102-4477 (Toll Free)
+Portal:     www.starhealth.in/grievance
+
+────────────────────────────────────────────────────────────────────────────────
+IMPORTANT NOTES / महत्वपूर्ण टिप्पणी
+────────────────────────────────────────────────────────────────────────────────
+
+1. If you had a previous policy with another insurer with similar coverage and 
+   availed portability, please provide:
+   - Previous policy copy
+   - Portability certificate
+   - Previous policy inception date
+
+2. If the surgery was an EMERGENCY due to fracture or accident, please provide:
+   - Emergency admission certificate from hospital
+   - MLC report (if applicable)
+   - Doctor's certificate stating emergency nature
+
+3. All documents should be submitted within 30 days of this letter.
+
+────────────────────────────────────────────────────────────────────────────────
+CONTACT US / संपर्क करें
+────────────────────────────────────────────────────────────────────────────────
+
+Customer Care:          1800-102-4477 (Toll Free)
+Email:                  customercare@starhealth.in
+Website:                www.starhealth.in
+Branch Locator:         www.starhealth.in/branch-locator
+
+────────────────────────────────────────────────────────────────────────────────
+                    This is a computer-generated document.
+    For any queries regarding this letter, please quote Reference No. above.
+            Star Health - आपकी सेहत, हमारी जिम्मेदारी
+────────────────────────────────────────────────────────────────────────────────
+
+IRDAI Registration No.: 129 | CIN: L66010TN2005PLC056306
+Registered Office: No.1, New Tank Street, Chennai - 600034

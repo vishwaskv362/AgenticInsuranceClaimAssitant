@@ -1,0 +1,309 @@
+═══════════════════════════════════════════════════════════════════════════════════════
+                              BAJAJ ALLIANZ GENERAL INSURANCE CO. LTD.
+                              HEALTH GUARD - POLICY DOCUMENT
+                                   (Summary of Coverage)
+═══════════════════════════════════════════════════════════════════════════════════════
+
+POLICY NUMBER: BAJAJ-HG-2024-MUM-998877
+POLICY TYPE: HEALTH GUARD - GOLD PLAN (Family Floater)
+IRDAI UIN: BAJHLIP21034V032021
+
+═══════════════════════════════════════════════════════════════════════════════════════
+SECTION 1: INSURED DETAILS / बीमित विवरण
+═══════════════════════════════════════════════════════════════════════════════════════
+
+Proposer/Policyholder:  Mr. Anil Kumar Mehta
+Date of Birth:          15 March, 1975
+Sum Insured:            ₹10,00,000/- (Ten Lakhs Only)
+Policy Period:          01 April, 2024 to 31 March, 2027 (3 Years)
+Premium Paid:           ₹45,500/- (including GST)
+
+MEMBERS COVERED:
+┌──────┬────────────────────────┬────────────┬─────────────┐
+│ S.No │ Name                   │ Relation   │ Date of Birth│
+├──────┼────────────────────────┼────────────┼─────────────┤
+│  1   │ Mr. Anil Kumar Mehta   │ Self       │ 15-03-1975  │
+│  2   │ Mrs. Sunita Mehta      │ Spouse     │ 22-07-1978  │
+│  3   │ Ms. Riya Mehta         │ Daughter   │ 10-11-2005  │
+│  4   │ Mr. Rohan Mehta        │ Son        │ 05-04-2010  │
+└──────┴────────────────────────┴────────────┴─────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════════════
+SECTION 2: COVERAGE BENEFITS / कवरेज लाभ
+═══════════════════════════════════════════════════════════════════════════════════════
+
+2.1 IN-PATIENT HOSPITALIZATION (IPD)
+────────────────────────────────────────────────────────────────────────────────────
+Coverage for hospitalization expenses when admitted for more than 24 hours:
+• Room, Boarding & Nursing charges
+• Surgeon, Anesthetist, Medical Practitioner fees
+• Medicines & Drugs
+• Diagnostic tests
+• ICU/ICCU charges
+• Operation Theatre charges
+• Cost of implants, stents, pacemakers
+
+2.2 PRE-HOSPITALIZATION EXPENSES
+────────────────────────────────────────────────────────────────────────────────────
+• Covered for 60 days prior to hospitalization
+• Includes consultations, diagnostics, medicines related to admission
+
+2.3 POST-HOSPITALIZATION EXPENSES
+────────────────────────────────────────────────────────────────────────────────────
+• Covered for 90 days after discharge
+• Follow-up consultations, medicines, diagnostics
+
+2.4 DAY CARE PROCEDURES
+────────────────────────────────────────────────────────────────────────────────────
+• 541+ Day Care procedures covered
+• No 24-hour hospitalization required
+• Includes: Dialysis, Chemotherapy, Cataract, Angioplasty, etc.
+
+2.5 DOMICILIARY HOSPITALIZATION
+────────────────────────────────────────────────────────────────────────────────────
+• Treatment at home when hospital admission not possible
+• Minimum 3 days treatment required
+• Subject to medical necessity
+
+2.6 AMBULANCE CHARGES
+────────────────────────────────────────────────────────────────────────────────────
+• Up to ₹5,000/- per hospitalization
+• Includes road ambulance and air ambulance (as per limits)
+
+2.7 AYUSH TREATMENT
+────────────────────────────────────────────────────────────────────────────────────
+• Ayurveda, Yoga, Unani, Siddha, Homeopathy covered
+• In recognized AYUSH hospitals
+• Same limits as allopathic treatment
+
+═══════════════════════════════════════════════════════════════════════════════════════
+SECTION 3: SUB-LIMITS & CAPPING / उप-सीमाएं
+═══════════════════════════════════════════════════════════════════════════════════════
+
+3.1 ROOM RENT SUB-LIMIT
+────────────────────────────────────────────────────────────────────────────────────
+┌───────────────────┬─────────────────────────────────┐
+│ Sum Insured       │ Room Rent Limit (per day)       │
+├───────────────────┼─────────────────────────────────┤
+│ Up to ₹5 Lakhs    │ 1% of SI or ₹5,000 (whichever less) │
+│ ₹5-10 Lakhs       │ 1% of SI or ₹10,000 (whichever less)│
+│ Above ₹10 Lakhs   │ No Sub-Limit                    │
+└───────────────────┴─────────────────────────────────┘
+
+For this policy (₹10 Lakhs SI): ₹10,000/- per day
+
+ICU: 2x of room rent limit = ₹20,000/- per day
+
+*** IMPORTANT: If room rent exceeds limit, proportionate deduction will be ***
+*** applied to all other charges as per Clause 5.3(b) ***
+
+3.2 DISEASE-WISE SUB-LIMITS
+────────────────────────────────────────────────────────────────────────────────────
+┌───────────────────────────────┬─────────────────────┐
+│ Treatment                     │ Sub-Limit           │
+├───────────────────────────────┼─────────────────────┤
+│ Cataract Surgery              │ ₹50,000 per eye     │
+│ Hernia Surgery                │ ₹75,000             │
+│ Piles/Fistula                 │ ₹50,000             │
+│ Appendectomy                  │ ₹60,000             │
+│ Tonsillectomy                 │ ₹40,000             │
+│ Hysterectomy                  │ ₹1,00,000           │
+│ Maternity (Normal Delivery)   │ ₹50,000             │
+│ Maternity (C-Section)         │ ₹75,000             │
+└───────────────────────────────┴─────────────────────┘
+
+Note: Above limits include all related expenses (room, surgery, medicines)
+
+═══════════════════════════════════════════════════════════════════════════════════════
+SECTION 4: WAITING PERIODS / प्रतीक्षा अवधि
+═══════════════════════════════════════════════════════════════════════════════════════
+
+4.1 INITIAL WAITING PERIOD: 30 DAYS
+────────────────────────────────────────────────────────────────────────────────────
+• No claim payable for any illness during first 30 days
+• Exception: Accidental injuries covered from Day 1
+
+4.2 PRE-EXISTING DISEASE WAITING PERIOD: 48 MONTHS
+────────────────────────────────────────────────────────────────────────────────────
+• Diseases existing before policy inception
+• 48 months waiting from first policy date
+• Covered after waiting period completion
+• Continuous renewal required
+
+4.3 SPECIFIC DISEASE WAITING PERIOD: 24 MONTHS
+────────────────────────────────────────────────────────────────────────────────────
+Following diseases have 24-month waiting period:
+• Cataract
+• Joint Replacement (Hip, Knee)
+• Hernia
+• Hydrocele
+• Benign Prostatic Hypertrophy
+• Hysterectomy (for menorrhagia/fibroid)
+• Fissure/Fistula/Piles
+• Sinusitis
+• ENT disorders
+• Kidney/Urinary stones
+• Gallbladder stones
+• Uterine Fibroid
+
+4.4 MATERNITY WAITING PERIOD: 36 MONTHS
+────────────────────────────────────────────────────────────────────────────────────
+• Maternity expenses covered after 36 months
+• Newborn baby covered for 90 days from birth
+
+═══════════════════════════════════════════════════════════════════════════════════════
+SECTION 5: EXCLUSIONS / अपवर्जन
+═══════════════════════════════════════════════════════════════════════════════════════
+
+5.1 PERMANENT EXCLUSIONS (Never Covered)
+────────────────────────────────────────────────────────────────────────────────────
+1. Cosmetic or plastic surgery (unless medically necessary)
+2. Dental treatment (unless due to accident)
+3. Spectacles, contact lenses, hearing aids
+4. Infertility treatment (IVF, IUI, etc.)
+5. Intentional self-injury or attempted suicide
+6. Treatment arising from alcohol/drug abuse
+7. War, nuclear contamination
+8. Adventure sports injuries
+9. Vaccination (except post-bite treatment)
+10. Weight management/obesity surgery
+11. Congenital diseases (external)
+12. Sexual dysfunction treatment
+13. Change of sex/gender treatment
+14. Sleep apnea treatment (unless associated with illness)
+15. Experimental or unproven treatments
+
+5.2 ITEMS NOT PAYABLE (Non-Medical Items)
+────────────────────────────────────────────────────────────────────────────────────
+As per IRDAI standard list:
+• Toiletries, cosmetics
+• Guest meals, telephone charges
+• Admission kit, gown
+• Slippers, tissue paper
+• TV, laundry charges
+• Registration, documentation charges
+• Service charges, surcharges
+
+═══════════════════════════════════════════════════════════════════════════════════════
+SECTION 6: PRE-AUTHORIZATION / पूर्व-प्राधिकरण
+═══════════════════════════════════════════════════════════════════════════════════════
+
+6.1 CASHLESS FACILITY
+────────────────────────────────────────────────────────────────────────────────────
+Available at 8500+ network hospitals across India
+
+6.2 PRE-AUTHORIZATION REQUIREMENTS
+────────────────────────────────────────────────────────────────────────────────────
+• Planned Admission: Intimation required 48 hours in advance
+• Emergency Admission: Intimation within 24 hours of admission
+• TPA Response: Within 1 hour (planned) / 2 hours (emergency)
+
+6.3 PROCEDURES REQUIRING MANDATORY PRE-AUTH
+────────────────────────────────────────────────────────────────────────────────────
+• All planned surgeries
+• High-cost investigations (MRI, CT, PET scan)
+• Implants and prosthetics
+• Cancer treatment (chemotherapy, radiotherapy)
+• Dialysis
+• Organ transplant
+• Mental health hospitalization
+
+*** FAILURE TO OBTAIN PRE-AUTHORIZATION FOR PLANNED PROCEDURES MAY RESULT ***
+*** IN CLAIM REJECTION OR REDUCED ADMISSIBLE AMOUNT ***
+
+═══════════════════════════════════════════════════════════════════════════════════════
+SECTION 7: CLAIM PROCEDURE / दावा प्रक्रिया
+═══════════════════════════════════════════════════════════════════════════════════════
+
+7.1 CASHLESS CLAIMS
+────────────────────────────────────────────────────────────────────────────────────
+1. Visit network hospital
+2. Show health card at admission desk
+3. Hospital sends pre-auth request to TPA
+4. TPA approves/queries within 1-2 hours
+5. Treatment provided; bill settled directly
+
+7.2 REIMBURSEMENT CLAIMS
+────────────────────────────────────────────────────────────────────────────────────
+1. Intimate within 24 hours of admission
+2. Pay hospital bills upfront
+3. Submit claim within 15 days of discharge
+4. Documents required:
+   □ Claim form (duly filled)
+   □ Discharge summary
+   □ Final hospital bill (itemized)
+   □ All investigation reports
+   □ Pharmacy bills with prescription
+   □ Doctor's notes/consultation records
+   □ Payment receipts
+   □ Photo ID proof
+
+7.3 CLAIM SETTLEMENT TIMELINE (IRDAI Mandated)
+────────────────────────────────────────────────────────────────────────────────────
+• Acknowledgment: 3 working days
+• Query (if any): Within 15 days
+• Settlement: Within 30 days of complete documents
+• Interest: 2% above bank rate if delayed
+
+═══════════════════════════════════════════════════════════════════════════════════════
+SECTION 8: GRIEVANCE REDRESSAL / शिकायत निवारण
+═══════════════════════════════════════════════════════════════════════════════════════
+
+Level 1: Company Grievance Cell
+• Email: baglocare@bajajallianz.co.in
+• Phone: 1800-209-5858 (Toll Free)
+• Response: Within 15 days
+
+Level 2: IRDAI IGMS Portal
+• Website: igms.irda.gov.in
+• Helpline: 155255
+
+Level 3: Insurance Ombudsman
+• For claims up to ₹50 lakhs
+• Free of cost
+• Website: www.cioins.co.in
+
+Level 4: Consumer Forum
+• Under Consumer Protection Act, 2019
+• District/State/National as per claim value
+
+═══════════════════════════════════════════════════════════════════════════════════════
+IMPORTANT POLICY CLAUSES
+═══════════════════════════════════════════════════════════════════════════════════════
+
+MORATORIUM PERIOD (Section 45 of Insurance Act):
+After 8 years of continuous coverage, no claim shall be rejected on grounds of 
+non-disclosure or misrepresentation, except in case of proven fraud.
+
+FREE LOOK PERIOD:
+15 days from policy receipt. Full refund minus medical examination charges.
+
+PORTABILITY:
+You can port this policy to another insurer with continuity benefits.
+
+NO CLAIM BONUS (NCB):
+10% increase in Sum Insured for each claim-free year (max 50%)
+
+═══════════════════════════════════════════════════════════════════════════════════════
+CONTACT INFORMATION
+═══════════════════════════════════════════════════════════════════════════════════════
+
+Bajaj Allianz General Insurance Co. Ltd.
+IRDAI Registration No.: 113
+
+Customer Care:      1800-209-5858 (Toll Free) / 020-30305858
+Email:              bagichelp@bajajallianz.co.in
+Website:            www.bajajallianz.com
+TPA:                Health India TPA Services Pvt. Ltd.
+TPA Helpline:       1800-102-4488
+
+Registered Office:
+Bajaj Allianz House, Airport Road, Yerawada, Pune - 411006
+
+═══════════════════════════════════════════════════════════════════════════════════════
+This is a Summary of Coverage. Please refer to the Policy Wordings for complete 
+terms, conditions, and exclusions. In case of any discrepancy, Policy Wordings 
+shall prevail.
+
+जीवन में स्वास्थ्य सबसे बड़ा धन है। | Health is the greatest wealth in life.
+═══════════════════════════════════════════════════════════════════════════════════════
