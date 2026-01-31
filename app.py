@@ -650,6 +650,16 @@ def render_step_3():
     
     else:
         # Show results
+        # Home button at top
+        if st.button("← Back to Home", key="home_btn"):
+            for key in ["document_text", "claim_info", "denial_codes", 
+                       "analysis_result", "patient_info", "policy_text",
+                       "auto_populated", "show_auto_fill_toast"]:
+                if key in st.session_state:
+                    del st.session_state[key]
+            st.session_state.step = 1
+            st.rerun()
+        
         st.success("✅ Analysis Complete!")
         
         # Display the appeal letter
@@ -682,7 +692,7 @@ def render_step_3():
         # Download and action options
         st.subheader("📤 Export Options")
         
-        col1, col2, col3, col4, col5 = st.columns(5)
+        col1, col2, col3 = st.columns(3)
         
         with col1:
             # PDF Download
@@ -762,28 +772,6 @@ def render_step_3():
                 font-size: 14px;
             ">📧 Send via Email</a>
             """, unsafe_allow_html=True)
-        
-        with col4:
-            if st.button("🏠 Go to Home"):
-                # Reset session state and go to home
-                for key in ["document_text", "claim_info", "denial_codes", 
-                           "analysis_result", "patient_info", "policy_text",
-                           "auto_populated", "show_auto_fill_toast"]:
-                    if key in st.session_state:
-                        del st.session_state[key]
-                st.session_state.step = 1
-                st.rerun()
-        
-        with col5:
-            if st.button("🔄 New Analysis"):
-                # Reset session state
-                for key in ["document_text", "claim_info", "denial_codes", 
-                           "analysis_result", "patient_info", "policy_text",
-                           "auto_populated", "show_auto_fill_toast"]:
-                    if key in st.session_state:
-                        del st.session_state[key]
-                st.session_state.step = 1
-                st.rerun()
         
         # AI-Generated Next Steps (from the analysis)
         st.divider()
