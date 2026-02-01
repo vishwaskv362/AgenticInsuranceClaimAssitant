@@ -20,13 +20,6 @@ from tools.pdf_parser import extract_text_from_pdf, extract_claim_info
 from tools.denial_codes import analyze_denial_codes, format_denial_analysis_report
 from crew import run_claim_analysis
 
-# PDF generation
-try:
-    from fpdf import FPDF
-    PDF_AVAILABLE = True
-except ImportError:
-    PDF_AVAILABLE = False
-
 # Word document generation
 try:
     from docx import Document
@@ -111,41 +104,6 @@ def generate_word_doc(letter_content: str, patient_name: str = "Policyholder") -
     return doc_bytes.getvalue()
 
 
-def generate_pdf(letter_content: str, patient_name: str = "Policyholder") -> bytes:
-    """Generate a PDF from the appeal letter content."""
-    if not PDF_AVAILABLE:
-        return None
-    
-    pdf = FPDF()
-    pdf.add_page()
-    pdf.set_auto_page_break(auto=True, margin=15)
-    
-    # Set font - use built-in font that supports basic characters
-    pdf.set_font("Helvetica", size=11)
-    
-    # Title
-    pdf.set_font("Helvetica", "B", 14)
-    pdf.cell(0, 10, "Appeal Letter - Insurance Claim", ln=True, align="C")
-    pdf.ln(5)
-    
-    # Content
-    pdf.set_font("Helvetica", size=10)
-    
-    # Handle multi-line content
-    for line in letter_content.split('\n'):
-        # Handle bold text markers
-        if line.startswith('**') and line.endswith('**'):
-            pdf.set_font("Helvetica", "B", 10)
-            pdf.multi_cell(0, 6, line.replace('**', ''))
-            pdf.set_font("Helvetica", size=10)
-        elif line.strip():
-            pdf.multi_cell(0, 6, line)
-        else:
-            pdf.ln(3)
-    
-    return pdf.output()
-
-
 def create_mailto_link(email: str, subject: str, body: str) -> str:
     """Create a mailto link for email clients."""
     params = {
@@ -164,99 +122,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# Custom CSS
-st.markdown("""
-<style>
-    /* Main container */
-    .main {
-        padding: 1rem;
-    }
-    
-    /* Header styling */
-    .main-header {
-        background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
-        padding: 2rem;
-        border-radius: 10px;
-        margin-bottom: 2rem;
-        color: white;
-        text-align: center;
-    }
-    
-    .main-header h1 {
-        margin: 0;
-        font-size: 2.5rem;
-    }
-    
-    .main-header p {
-        margin: 0.5rem 0 0 0;
-        opacity: 0.9;
-    }
-    
-    /* Card styling */
-    .info-card {
-        background: #f8f9fa;
-        border: 1px solid #e9ecef;
-        border-radius: 8px;
-        padding: 1.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    .success-card {
-        background: #d4edda;
-        border: 1px solid #c3e6cb;
-        border-radius: 8px;
-        padding: 1.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    .warning-card {
-        background: #fff3cd;
-        border: 1px solid #ffc107;
-        border-radius: 8px;
-        padding: 1.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    /* Step indicator */
-    .step-indicator {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 2rem;
-    }
-    
-    .step {
-        text-align: center;
-        flex: 1;
-    }
-    
-    .step-number {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: #e9ecef;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-    }
-    
-    .step-active .step-number {
-        background: #1e3a5f;
-        color: white;
-    }
-    
-    .step-complete .step-number {
-        background: #28a745;
-        color: white;
-    }
-    
-    /* Hide Streamlit branding */
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-</style>
-""", unsafe_allow_html=True)
-
 
 def render_header():
     """Render the main header."""
@@ -272,6 +137,18 @@ def render_header():
 def render_sidebar():
     """Render the sidebar with information and settings."""
     with st.sidebar:
+        # Home button - always visible
+        if st.button("🏠 Go to Home", use_container_width=True, type="secondary"):
+            for key in ["document_text", "claim_info", "denial_codes", 
+                       "analysis_result", "patient_info", "policy_text",
+                       "auto_populated", "show_auto_fill_toast"]:
+                if key in st.session_state:
+                    del st.session_state[key]
+            st.session_state.step = 1
+            st.rerun()
+        
+        st.divider()
+        
         st.header("📖 How It Works")
         
         st.markdown("""
@@ -650,16 +527,6 @@ def render_step_3():
     
     else:
         # Show results
-        # Home button at top
-        if st.button("← Back to Home", key="home_btn"):
-            for key in ["document_text", "claim_info", "denial_codes", 
-                       "analysis_result", "patient_info", "policy_text",
-                       "auto_populated", "show_auto_fill_toast"]:
-                if key in st.session_state:
-                    del st.session_state[key]
-            st.session_state.step = 1
-            st.rerun()
-        
         st.success("✅ Analysis Complete!")
         
         # Display the appeal letter
@@ -692,37 +559,9 @@ def render_step_3():
         # Download and action options
         st.subheader("📤 Export Options")
         
-        col1, col2, col3 = st.columns(3)
+        col1, col2 = st.columns(2)
         
         with col1:
-            # PDF Download
-            if PDF_AVAILABLE:
-                try:
-                    pdf_bytes = generate_pdf(edited_letter, patient_name)
-                    if pdf_bytes:
-                        st.download_button(
-                            label="📥 Download PDF",
-                            data=pdf_bytes,
-                            file_name=f"appeal_letter_{claim_number or 'claim'}.pdf",
-                            mime="application/pdf",
-                            type="primary",
-                        )
-                except Exception as e:
-                    st.download_button(
-                        label="📥 Download TXT",
-                        data=edited_letter,
-                        file_name=f"appeal_letter_{claim_number or 'claim'}.txt",
-                        mime="text/plain",
-                    )
-            else:
-                st.download_button(
-                    label="📥 Download TXT",
-                    data=edited_letter,
-                    file_name=f"appeal_letter_{claim_number or 'claim'}.txt",
-                    mime="text/plain",
-                )
-        
-        with col2:
             # Word download
             if DOCX_AVAILABLE:
                 try:
@@ -749,7 +588,7 @@ def render_step_3():
                     mime="text/plain",
                 )
         
-        with col3:
+        with col2:
             # Email button
             email_subject = f"Appeal against Claim Rejection - {claim_number}" if claim_number else "Appeal against Claim Rejection"
             email_body = f"Dear Sir/Madam,\n\nPlease find below my appeal letter.\n\n---\n\n{edited_letter[:1500]}...\n\n(Full letter attached)"
@@ -833,6 +672,61 @@ def render_step_3():
 def main():
     """Main application entry point."""
     initialize_session_state()
+    
+    # Apply static CSS
+    st.markdown("""
+    <style>
+        /* Header styling */
+        .main-header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            color: white;
+            text-align: center;
+        }
+        
+        .main-header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .main-header p {
+            margin: 0.5rem 0 0 0;
+            opacity: 0.9;
+        }
+        
+        /* Card styling */
+        .info-card {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .success-card {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .warning-card {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Hide Streamlit branding */
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+    </style>
+    """, unsafe_allow_html=True)
+    
     render_header()
     render_sidebar()
     

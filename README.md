@@ -54,11 +54,8 @@ Multi-agent CrewAI system for thorough analysis:
 6. **Quality Reviewer** - Final polish
 
 ### Export Options
-- **Download PDF** - Professional PDF appeal letter (letter content only)
 - **Download Word** - Editable .docx format (letter content only)
 - **Send via Email** - Opens your email app with pre-filled content
-- **Go to Home** - Return to start
-- **New Analysis** - Analyze another claim
 
 ### Clean Letter Separation
 The AI generates both the appeal letter and guidance/next steps. These are now separated:
