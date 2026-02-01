@@ -715,10 +715,15 @@ def main():
         
         .warning-card {
             background: #fff3cd;
-            border: 1px solid #ffc107;
+            border: 2px solid #ffc107;
             border-radius: 8px;
             padding: 1.5rem;
             margin-bottom: 1rem;
+            color: #856404 !important;
+        }
+        
+        .warning-card strong {
+            color: #664d03 !important;
         }
         
         /* Hide Streamlit branding */
